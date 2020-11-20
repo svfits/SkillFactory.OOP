@@ -3,19 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillFactory.OOP.Methods", "SkillFactory.OOP\SkillFactory.OOP.Methods.csproj", "{27098998-2736-40EF-91D9-4632A01C6EFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkillFactory.OOP.Methods", "SkillFactory.OOP\SkillFactory.OOP.Methods.csproj", "{27098998-2736-40EF-91D9-4632A01C6EFF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Methods", "Methods", "{7CC2C602-99D6-4691-BAAB-7432DE85ADEB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Object and Stack", "Object and Stack", "{C0A9E13D-7452-4CA7-ADB7-4C4DCFB3E54C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillFactory.StackandHeap", "SkillFactory.StackandHeap\SkillFactory.StackandHeap.csproj", "{8A30D862-8165-400A-B266-ADBD6B25E052}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkillFactory.StackandHeap", "SkillFactory.StackandHeap\SkillFactory.StackandHeap.csproj", "{8A30D862-8165-400A-B266-ADBD6B25E052}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP", "OOP", "{22289083-5E97-4C64-9125-F6F8B06B1247}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillFactory.StartOOP", "SkillFactory.StartOOP\SkillFactory.StartOOP.csproj", "{1B25391C-163E-4954-BB45-20D946D6B7C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkillFactory.StartOOP", "SkillFactory.StartOOP\SkillFactory.StartOOP.csproj", "{1B25391C-163E-4954-BB45-20D946D6B7C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillFactory.StartOOP.Library", "SkillFactory.StartOOP.Library\SkillFactory.StartOOP.Library.csproj", "{8C222708-FE76-4D1C-B947-F0A1DFE75FDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkillFactory.StartOOP.Library", "SkillFactory.StartOOP.Library\SkillFactory.StartOOP.Library.csproj", "{8C222708-FE76-4D1C-B947-F0A1DFE75FDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{84530DDC-D9DD-4E65-B2D5-54647072CF83}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

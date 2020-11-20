@@ -2,8 +2,28 @@
 
 namespace SkillFactory.StartOOP.Library
 {
-    public class Employee
+    public sealed class Employee : User
     {
+        /// <summary>
+        /// Сумма всех зарплат сотрудников
+        /// </summary>
+        private static readonly int SumSalary;
+
+        static Employee()
+        {
+            SumSalary = 10;
+        }
+
+        public Employee(NervousSystem nervousSystem, Heart heart) : base(nervousSystem, heart)
+        {
+
+        }
+
+        public Employee()
+        {
+
+        }
+
         /// <summary>
         /// Зарплата
         /// </summary>
@@ -16,14 +36,32 @@ namespace SkillFactory.StartOOP.Library
             }
         }
 
-        /// <summary>
-        /// Пропуск
-        /// </summary>
-        public Pass Pass { get; set; }
+        public override Pass Pass { get; set; }
+
+        public Workplace Workplace { get; set; }
+
+        public override string HearWork(string name)
+        {
+            return base.HearWork(name);
+        }
+
+        public override string NervousSystemWork(string name)
+        {
+            return base.NervousSystemWork(name);
+        }
 
         /// <summary>
-        /// Рабочее место
+        /// Перегрузка операторов
         /// </summary>
-        public Workplace Workplace { get; set; }
+        /// <param name="employee"></param>
+        /// <param name="employee1"></param>
+        /// <returns></returns>
+        public static Employee operator +(Employee employee, Employee employee1)
+        {
+            return new Employee()
+            {
+                Pass = new Pass() { NumberPass = employee.Pass.NumberPass + employee1.Pass.NumberPass }
+            };
+        }
     }
 }

@@ -4,7 +4,7 @@ namespace SkillFactory.StartOOP.Library
 {
     public class Workplace
     {
-        private int workplaceId;
+        private readonly int workplaceId;
 
         public Workplace()
         {

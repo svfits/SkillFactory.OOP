@@ -9,21 +9,21 @@ namespace SkillFactory.StackandHeap
         {
             #region Stack Heap
 
-            //UserStack userStack = new UserStack(Age: 30, Mass: 101, Salary: 20000);
+            UserStack userStack = new UserStack(Age: 30, Mass: 101, Salary: 20000);
 
-            //var lsUser = new List<UserClass>();
-            //for (int i = 0; i < 10000000; i++)
-            //{
-            //    UserClass userClass = new UserClass(Age: 2 * i, Mass: 10 * i, Salary: 3 * i);
-            //    lsUser.Add(userClass);
+            var lsUser = new List<UserClass>();
+            for (int i = 0; i < 10000000; i++)
+            {
+                UserClass userClass = new UserClass(Age: 2 * i, Mass: 10 * i, Salary: 3 * i);
+                lsUser.Add(userClass);
 
-            //    if (i % 100 == 0)
-            //    {
-            //        Console.WriteLine(userClass.Age);
-            //        Console.WriteLine(userClass.Mass);
-            //        Console.WriteLine(userClass.Salary);
-            //    }
-            //}
+                if (i % 100 == 0)
+                {
+                    Console.WriteLine(userClass.Age);
+                    Console.WriteLine(userClass.Mass);
+                    Console.WriteLine(userClass.Salary);
+                }
+            }
 
             #endregion
 
