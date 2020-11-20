@@ -4,7 +4,7 @@ namespace SkillFactory.StartOOP.Library
 {
     public class Workplace
     {
-        private readonly int workplaceId;
+        private int workplaceId;
 
         public Workplace()
         {
@@ -17,6 +17,10 @@ namespace SkillFactory.StartOOP.Library
             get
             {
                 return workplaceId;
+            }
+            set
+            {
+                workplaceId = value;
             }
         }
     }

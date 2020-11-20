@@ -1,14 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SkillFactory.StartOOP.Library.Extensions
+﻿namespace SkillFactory.StartOOP.Library.Extensions
 {
     /// <summary>
     /// Сохраним данные в XML file
     /// </summary>
     public static class Expansion
     {
+        /// <summary>
+        /// Расширение для сохранения в файл объекта c# как XML
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="obj"></param>
+        /// <param name="fileName"></param>
         public static void SaveXMLFile<T>(this T obj, string fileName)
         {
             System.Xml.Serialization.XmlSerializer writer = new System.Xml.Serialization.XmlSerializer(typeof(T));

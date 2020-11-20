@@ -12,7 +12,7 @@ namespace SkillFactory.StartOOP
             Employee employee = new Employee(new NervousSystem(), new Heart())
             {
                 Pass = new Pass() { FotoURL = "url", NumberPass = 123 },
-                Workplace = new Workplace() { },
+                Workplace = new Workplace() { WorkplaceId = 101 },
             };
 
             Console.WriteLine(employee.Workplace.WorkplaceId);
@@ -20,7 +20,8 @@ namespace SkillFactory.StartOOP
 
             ProductManager productManager = new ProductManager(new NervousSystem(), new Heart())
             {
-                Pass = new Pass() { FotoURL = "FotoURL", NumberPass = 1001 }
+                Pass = new Pass() { FotoURL = "FotoURL", NumberPass = 1001 },
+                Workplace = new Workplace() { WorkplaceId = 56 }
             };
 
             Console.WriteLine(productManager.NervousSystemWork("Product manager"));

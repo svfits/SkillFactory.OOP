@@ -29,6 +29,8 @@ namespace SkillFactory.StartOOP.Library
             }
         }
 
+        public Workplace Workplace { get; set; }
+
         public override string HearWork(string name)
         {
             return base.HearWork(name);
